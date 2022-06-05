@@ -1,0 +1,250 @@
+@media screen and (max-width: 1200px) {
+  nav {
+    display: block;
+    padding: 0;
+  }
+  nav .icon {
+    display: inline-block;
+    padding: 15px 30px;
+  }
+  nav .search_box {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  nav .search_box input {
+    width: 90%;
+  }
+  nav ol {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    height: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  nav ol li {
+    text-align: center;
+    transition: 0.3s 0.1s all;
+    opacity: 0;
+  }
+  nav ol li a {
+    color: #000;
+    font-size: 28px;
+    padding: 25px;
+    display: block;
+  }
+  nav ol li:nth-child(1) {
+    transform: translateX(-150px);
+  }
+  nav ol li:nth-child(2) {
+    transform: translateX(-200px);
+  }
+  nav ol li:nth-child(3) {
+    transform: translateX(-250px);
+  }
+  nav ol li:nth-child(4) {
+    transform: translateX(-300px);
+  }
+  nav ol li:nth-child(5) {
+    transform: translateX(-350px);
+  }
+  nav .bar {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    cursor: pointer;
+  }
+  nav .bar #times {
+    display: none;
+  }
+  #check:checked ~ nav .bar #times {
+    display: block;
+  }
+  #check:checked ~ nav .bar #bars {
+    display: none;
+  }
+  #check:checked ~ nav ol {
+    visibility: visible;
+    height: 465px;
+  }
+  #check:checked ~ nav ol li:nth-child(1),
+  #check:checked ~ nav ol li:nth-child(2),
+  #check:checked ~ nav ol li:nth-child(3),
+  #check:checked ~ nav ol li:nth-child(4),
+  #check:checked ~ nav ol li:nth-child(5) {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .games {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-footer {
+    background-color: #1d2540;
+    color: #ffffff;
+    padding-left: 0%;
+  }
+
+  .profile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .myorders {
+    width: auto;
+  }
+
+  .myprofile,
+  .chat,
+  .phone,
+  .email {
+    width: auto;
+  }
+  .support {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cta-support {
+    font-size: 10px;
+  }
+  .support-button {
+    padding-top: 10px;
+  }
+
+  .signsuccess {
+    width: auto;
+  }
+
+  .sign-button {
+    font-size: 7px;
+  }
+
+  .sign-button,
+  .cta {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  .signinform {
+    display: grid;
+    width: auto;
+  }
+
+  .product-details {
+    width: auto;
+  }
+
+  .wrapper {
+    width: auto;
+  }
+  .product-details img {
+    margin: auto;
+  }
+  .product-box,
+  .buy-box {
+    width: auto;
+    margin: auto;
+  }
+  .information-box {
+    width: auto;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .support-button {
+    padding-top: 5px;
+  }
+
+  .cta-icon {
+    font-size: 50px;
+  }
+
+  .sign-button {
+    font-size: 5px;
+  }
+
+  .submitButton {
+    width: 150px;
+    margin-left: 60px;
+  }
+
+  .form {
+    width: 350px;
+  }
+
+  .cart-info p {
+    display: none;
+  }
+
+  .cart-button {
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 20px;
+  }
+
+  .checkout-page {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-details img {
+    margin: auto;
+  }
+
+  .sign-button,
+  .cta {
+    display: inline-block;
+  }
+
+  .market {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .select-box {
+    width: auto;
+    margin: auto;
+  }
+
+  .sold-games hr {
+    width: 80%;
+    margin: auto;
+  }
+
+  .price-cart {
+    display: none;
+  }
+
+  .cart-bar {
+    display: none;
+  }
+
+  .product-page {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-box {
+    width: auto;
+    margin: auto;
+    margin-left: 0px;
+  }
+
+  .buy-box {
+    width: auto;
+    margin: auto;
+    margin-left: 0px;
+  }
+
+  .information-box {
+    width: auto;
+    margin: auto;
+  }
+}

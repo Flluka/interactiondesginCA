@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Checkout and pay for your game, enter card details" />
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/33d8805278.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+    <title>Gamehub Checkout</title>
+  </head>
+  <body>
+    <header>
+      <!-- NavBar
+    ------------------------------------------------------->
+      <input type="checkbox" id="check" />
+      <nav>
+        <div>
+          <a href="/index.html">
+            <img src="/images/GameHub_Logo.png" class="logo" alt="Gamehub logo" />
+          </a>
+        </div>
+        <div class="search_box">
+          <input type="search" placeholder="Search here" />
+          <span class="fa fa-search"></span>
+        </div>
+        <ol>
+          <li>
+            <a href="/allgames.html"> <i class="fas fa-gamepad"></i>All Games</a>
+          </li>
+          <li>
+            <a href="/usedgames.html"> <i class="fas fa-store"></i>Used Games</a>
+          </li>
+          <li>
+            <a href="/cart.html"> <i class="fas fa-shopping-cart"></i>Cart</a>
+          </li>
+          <li>
+            <a href="/account.html"> <i class="fas fa-user-circle"></i>Account</a>
+          </li>
+          <li>
+            <a href="/signin.html"> <i class="fas fa-sign-in-alt"></i>Log In</a>
+          </li>
+        </ol>
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+    <main>
+      <h1>Checkout</h1>
+      <!-- Product box
+    ------------------------------------------------------->
+      <div class="checkout-page">
+        <div class="product-details">
+          <h4>Ping Pong (Playbox)</h4>
+          <img src="images/GameHub_covers.jpg" alt="Ping Pong Game for playbox" /> <br />
+          <div class="details">
+            <p>Details</p>
+            <ol>
+              <li>Product Price: $59.99</li>
+              <li>Discount: $0.00</li>
+              <li>Shipping: $5.99</li>
+              <hr />
+              <li>Summary: $64.98</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Payment & Shipping Box
+    ------------------------------------------------------->
+        <div class="wrapper">
+          <div class="container">
+            <form action="">
+              <h3>
+                <i class="fas fa-shipping-fast"></i>
+                Shipping Details
+              </h3>
+              <div class="name">
+                <div>
+                  <label for="f-name">First</label>
+                  <input type="text" name="f-name" />
+                </div>
+                <div>
+                  <label for="l-name">Last</label>
+                  <input type="text" name="l-name" />
+                </div>
+              </div>
+              <div>
+                <label for="name">Street</label>
+                <input type="text" name="address" />
+              </div>
+              <div>
+                <div>
+                  <label for="city">City</label>
+                  <input type="text" name="city" />
+                </div>
+                <div>
+                  <label for="state">State</label>
+                  <input type="text" name="state" />
+                </div>
+                <div>
+                  <label for="zip">Zip</label>
+                  <input type="text" name="zip" />
+                </div>
+                <br />
+              </div>
+              <h3><i class="far fa-credit-card"></i> Payment Information</h3>
+              <div>
+                <label for="card-num">Credit Card No.</label>
+                <input type="text" name="card-num" />
+              </div>
+              <div>
+                <div>
+                  <label for="card-num">Exp</label>
+                  <input type="text" name="expire" />
+                </div>
+                <div>
+                  <label for="card-num">CCV</label>
+                  <input type="text" name="security" />
+                </div>
+              </div>
+              <div class="check-button">
+                <a href="/purchasesuccess.html">Purchase</a>
+                <a href="/cart.html">Back to Cart</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="main-footer">
+        <section class="main__container">
+          <article class="main__container-list">
+            <p class="social">Social Media</p>
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="main__container">
+          <article class="main__container-list">
+            <p class="information-support">Information</p>
+            <ul>
+              <li><a href="#">Customer Reviews</a></li>
+              <li><a href="#">Brands/Publisher</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </article>
+        </section>
+        <section class="main__container">
+          <article class="main__container-list">
+            <p class="support-footer">Support</p>
+            <ul>
+              <li><a href="support.html">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Returns & Warranty</a></li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </footer>
+    <div class="copyright-bottom">
+      <p>&copy; Fisnik Lluka 2022</p>
+    </div>
+  </body>
+</html>
