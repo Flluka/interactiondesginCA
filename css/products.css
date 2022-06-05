@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  body {
+	background-color: #f2f2f2;
+	font-family: Work Sans, sans-serif;
+  }
+/* Navigation Bar 
+----------------------------------------------------------*/
+.navbar {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1d2540;
+	color: white;
+	height: 80px;
+	width: 100%;
+  }
+  
+  label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+  }
+  
+  .navbar-links {
+	padding-right: 15px;
+  }
+  
+  .navbar-links ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .navbar-links li {
+	list-style: none;
+  }
+  
+  .navbar-links li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding-right: 16px;
+	font-size: 20px;
+	font-family: "Work Sans", sans-serif;
+  }
+  
+  .navbar-links li a {
+	display: inline-block;
+	position: relative;
+	color: #ffffff;
+  }
+  
+  .navbar-links li a:after {
+	content: "";
+	position: absolute;
+	width: 90%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #ffffff;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+  }
+  
+  .navbar-links li a:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
+
+
+.products {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 60px;
+	grid-gap: 80px;
+}
+
+.product-button {
+	background-color: #1d2540;
+	color: white;
+	border: 0px;
+	width: 100%;
+	padding: 10px;
+	margin: 20px 0px;
+	transition: all 1s;
+	font-weight:bold;
+}
+
+.product-button:hover {
+	cursor: pointer;
+}
+
+.cart {
+	border: 1px solid black;
+	position: fixed;
+	max-width: 600px;
+	min-width: 200px;
+	margin: auto;
+	padding: 20px;
+	right: 60px;
+	top: 90px;
+	display: none;
+	flex-direction: column;
+}
+
+.checkout-button {
+	background-color: #1d2540;
+	color: white;
+	border: 0px;
+	width: 100%;
+	padding: 10px;
+	margin: 20px 0px;
+	transition: all 1s;
+	font-weight:bold;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+.product-image {
+	background-size: cover;
+	height: 400px;
+	width: 300px;
+}
+
+.cart-image {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-size: cover;
+}
